@@ -6,6 +6,7 @@ import { User } from './users/users.model';
 import { RolesModule } from './roles/roles.module';
 import { Role } from './roles/roles.model';
 import { UserRoles } from './roles/user-roles.model';
+import { AuthModule } from './auth/auth.module';
 
 const env = process.env;
 
@@ -28,6 +29,7 @@ const env = process.env;
 		}),
 		UsersModule,
 		RolesModule,
+		AuthModule,
 	]
 })
 export class AppModule {
